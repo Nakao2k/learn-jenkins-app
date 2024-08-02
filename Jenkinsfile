@@ -87,6 +87,7 @@ pipeline {
             }
             steps {
                 sh '''
+                    echo 'Small change'
                     npm install netlify-cli
                     node_modules/.bin/netlify --version
                     node_modules/.bin/netlify status
